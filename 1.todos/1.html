@@ -5,23 +5,63 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TODOS</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>TODOS</h1>
-  <form action="" id = "mainForm" autocapitalize="words">
-    <label for="todos">Todos</label>
-    <input type="text" placeholder="Enter the list" id="todoText">
-  <ul id="todoList">
 
-  </ul>
+  <header>
+    <h1>TODOS</h1>
+  </header>
 
-    <footer>
-      <p>Left Click to toggle completed</p>
-      <p>Right click to delete todos</p>
-    </footer>
-  </form>
+  <section class="container">
+    <h2 id="todo-title">Add Task </h2>
+    
+    <div class="form-container">
+      <form action="" class="todo-form">
+        <div class="todo-input">
+          <input type="text" name="test" id="add-todos" placeholder="New Task">
+          <button type="submit" id="add">ADD</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="task-list">
+      <ul id="list-items">
+        <li class="list-item">
+          <input type="checkbox" class="item checked">
+          <label class="checked">sduhg</label>
+          <a href="#">X</a>
+        </li>
+        <li class="list-item">
+          <input type="checkbox" class="item checked">
+          <label class="checked">sduhg</label>
+          <a href="#">X</a>
+        </li>
+        <li class="list-item">
+          <input type="checkbox" class="item checked">
+          <label class="checked">sduhg</label>
+          <a href="#">X</a>
+        </li>
+
+        <li class="list-item">
+          <input type="checkbox" class="item checked">
+          <label class="checked">sduhg</label>
+          <a href="#">X</a>
+        </li>
 
 
-  <script src="app.js"></script>
+
+      </ul>
+      
+      <a href="#" id="clear">Clear</a>
+    </div>
+  </section>
+
+
+  
+  
+
+
+<script src="app.js"></script>
 </body>
 </html>
