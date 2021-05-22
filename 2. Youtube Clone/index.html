@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/6f38fb86b9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header id="heading">
+    <nav class="navbar">
+      <div class="main-bar">
+          <div id="hamburger" class="openNav" onclick= "openNav()">
+            <a href="#">
+              <div></div>
+                <div></div>
+                <div></div>
+            </a> 
+          </div>
+        <div class="YtLogo">
+          <img src="./assests/logo.png" alt="Youtube" id="youtubeLogo">
+        </div>  
+        <div class="search-bar">
+            <div class="textField">
+              <input type="text"  id="search" placeholder="Search">
+              <a href="#">
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
+            <a href="#">
+              <i class="fas fa-microphone"></i>
+            </a>
+          </div>
+          <a href="#">
+            <i class="fas fa-th"></i>
+          </a>
+          <a href="#">
+            <i class="fas fa-ellipsis-v"></i>
+          </a>
+          <div class="account">
+            <a href="#"><i class="fas fa-user-circle"></i>SIGN IN</a>
+          </div>
+      </div>
+    </nav>
+    </div>
+  </header>
+
+
+  <section class="section-content" id="section-area">
+    <div class="bar">
+      <div class="side-navbar">
+        <div class="shownBar" id="shownBar">
+          <div class="home hovering">
+            <a href="#" class="selected">
+              <div class="sidebar-icon">
+                <div class="sidebar-homeIcon">
+                  <i class="fas fa-home"></i>
+                </div>
+                <div class="sidebar-homeLegends">
+                  <span class="sidebar-legends">Home</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="explore hovering">
+          <a href="#">
+            <div class="sidebar-icon">
+              <div class="sidebar-homeIcon">
+                <i class="fas fa-compass"></i>
+              </div>
+              <div class="sidebar-homeLegends">
+                <span class="sidebar-legends">Explore
+                </span>
+              </div>
+            </div>
+          </a>  
+          </div>
+
+
+          <div class="subscriptions hovering">
+          <a href="#">
+            <div class="sidebar-icon">
+              <div class="sidebar-homeIcon">
+                <i class="fas fa-play"></i>
+              </div>
+              <div class="sidebar-homeLegends">
+            <span class="sidebar-legends" style="font-size: 10px;
+            margin-left: 1px;">Subscriptions</span>
+              </div>
+            </div>
+          </a>  
+          </div>
+          <div class="library hovering">
+            <a href="#">
+              <div class="sidebar-icon">
+              <div class="sidebar-homeIcon">
+                <i class="fas fa-book-open"></i>
+              </div>
+              <div class="sidebar-homeLegends">
+                <span class="sidebar-legends">Library</span>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="history hovering">
+            <a href="#">
+              <div class="sidebar-icon">
+                <div class="sidebar-homeIcon">
+                  <i class="fas fa-history"></i>
+                </div>
+                <div class="sidebar-homeLegends">
+                  <span class="sidebar-legends">
+                    History
+                  </span>            
+                </div>
+              </div>
+            </a>
+          </div>   
+        </div>
+  
+        <div class="hiddenBar" id="hiddenBar">
+          <div class="hlogo">
+            <div id="hamburger" onclick="closeNav()">
+              <a href="#">
+                <div></div>
+                  <div></div>
+                  <div></div>
+              </a> 
+              </div>
+            <img src="./assests/logo.png" alt="YouTube">
+          </div>
+
+
+          <div class="components">
+            <div class="component">  
+              <div class="hbuttons" id="hhome">
+                <a href="#">
+                  <i class="fas fa-home"></i>
+                <span class="hbar-legends">Home</span>
+                </a>
+              </div>
+              <div class="hbuttons" id="hexplore">
+                <a href="#">
+                  <i class="fas fa-compass"></i>
+                  <span class="hbar-legends">Explore
+                  </span>
+                </a>  
+              </div>
+              <div class="hbuttons" id="hSubs">
+                <a href="#">
+                  <i class="fas fa-play"></i>
+                  <span class="hbar-legends">Subscriptions</span>
+                </a>
+              </div>
+            </div>
+            <div class="component">  
+              <div class="hbuttons" id="hLibrary">
+                <a href="#">
+                  <i class="fas fa-play"></i>
+                  <span class="hbar-legends">Library</span>
+                </a>
+              </div>
+              <div class="hbuttons" id="hHistory">
+                <a href="#">
+                  <i class="fas fa-play"></i>
+                  <span class="hbar-legends">History</span>
+                </a>
+              </div>
+            </div>
+            <div class="component">
+            </div>
+            <div class="component">  
+            </div>
+            <div class="component">  
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>  
+      
+          </div>
+    <div id="main-content" class="main-area">
+      <div class="tags">
+        <div id="tag1" class="recommednation tagSelected">All</div>
+        <div id="tag2" class="recommednation">Music</div>
+        <div id="tag3" class="recommednation">Game</div>
+        <div id="tag4" class="recommednation">Sports</div>
+        <div id="tag5" class="recommednation">Live</div>
+        <div id="tag6" class="recommednation">Bollywood</div>
+        <div id="tag7" class="recommednation">PUBG</div>
+        <div id="tag8" class="recommednation">BGMI</div>
+        <div id="tag9" class="recommednation">Trending</div>
+        <div id="tag10"class="recommednation">T-Series</div>
+        <div id="tag11" class="recommednation">PUBG</div>
+        <div id="tag12" class="recommednation">BGMI</div>
+      </div>
+      <div class="videos">
+        <div class="video" id="video1">
+          <a href="#">
+            <div class="thumbnail">
+              <img src="./assests/thumbnail1.jpg" alt="title">
+            </div>
+            <div class="details">
+              <div class="channel">
+                <img src="./assests/channel1.png" alt="">
+              </div>
+              <div class="stats">
+                  <div class="title">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint..
+                  </div>
+                  <div class="data">
+                    <div class="channel-name">WB</div>
+                    <div class="uploaded">29M Views 9 Years Ago</div>
+                  </div> 
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="video" id="video1">
+          <a href="#">
+            <div class="thumbnail">
+              <img src="./assests/thumbnail2.jpg" alt="title">
+            </div>
+            <div class="details">
+              <div class="channel">
+                <img src="./assests/channel1.png" alt="">
+              </div>
+              <div class="stats">
+                  <div class="title">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint..
+                  </div>
+                  <div class="data">
+                    <div class="channel-name">WB</div>
+                    <div class="uploaded">29M Views 9 Years Ago</div>
+                  </div> 
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="video" id="video1">
+          <a href="#">
+            <div class="thumbnail">
+              <img src="./assests/thumbnail3.jpg" alt="title">
+            </div>
+            <div class="details">
+              <div class="channel">
+                <img src="./assests/channel1.png" alt="">
+              </div>
+              <div class="stats">
+                  <div class="title">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint..
+                  </div>
+                  <div class="data">
+                    <div class="channel-name">WB</div>
+                    <div class="uploaded">29M Views 9 Years Ago</div>
+                  </div> 
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="video" id="video1">
+          <a href="#">
+            <div class="thumbnail">
+              <img src="./assests/thumbnail4.jpg" alt="title">
+            </div>
+            <div class="details">
+              <div class="channel">
+                <img src="./assests/channel1.png" alt="">
+              </div>
+              <div class="stats">
+                  <div class="title">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint..
+                  </div>
+                  <div class="data">
+                    <div class="channel-name">WB</div>
+                    <div class="uploaded">29M Views 9 Years Ago</div>
+                  </div> 
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="video" id="video1">
+          <a href="#">
+            <div class="thumbnail">
+              <img src="./assests/thumbnail5.jpg" alt="title">
+            </div>
+            <div class="details">
+              <div class="channel">
+                <img src="./assests/channel1.png" alt="">
+              </div>
+              <div class="stats">
+                  <div class="title">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint..
+                  </div>
+                  <div class="data">
+                    <div class="channel-name">WB</div>
+                    <div class="uploaded">29M Views 9 Years Ago</div>
+                  </div> 
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="video" id="video1">
+          <a href="#">
+            <div class="thumbnail">
+              <img src="./assests/thumbnail6.jpg" alt="title">
+            </div>
+            <div class="details">
+              <div class="channel">
+                <img src="./assests/channel1.png" alt="">
+              </div>
+              <div class="stats">
+                  <div class="title">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint..
+                  </div>
+                  <div class="data">
+                    <div class="channel-name">WB</div>
+                    <div class="uploaded">29M Views 9 Years Ago</div>
+                  </div> 
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="video" id="video1">
+          <a href="#">
+            <div class="thumbnail">
+              <img src="./assests/thumbnail7.jpg" alt="title">
+            </div>
+            <div class="details">
+              <div class="channel">
+                <img src="./assests/channel1.png" alt="">
+              </div>
+              <div class="stats">
+                  <div class="title">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint..
+                  </div>
+                  <div class="data">
+                    <div class="channel-name">WB</div>
+                    <div class="uploaded">29M Views 9 Years Ago</div>
+                  </div> 
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="video" id="video1">
+          <a href="#">
+            <div class="thumbnail">
+              <img src="./assests/thumbnail8.jpg" alt="title">
+            </div>
+            <div class="details">
+              <div class="channel">
+                <img src="./assests/channel1.png" alt="">
+              </div>
+              <div class="stats">
+                  <div class="title">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint...
+                  </div>
+                  <div class="data">
+                    <div class="channel-name">WB</div>
+                    <div class="uploaded">29M Views 9 Years Ago</div>
+                  </div> 
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>      
+    </div>    
+  </section>
+  <script src="./app.js"></script>
+</body>
+</html>
