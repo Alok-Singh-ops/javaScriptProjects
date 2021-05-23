@@ -8,11 +8,21 @@ const added = document.querySelector(".success");
 const bookTable = document.querySelector(".book-table");
 
 
-function Book(title,author,isbn) {
-  this.title = title;
-  this.author = author;
-  this.isbn = isbn;
+
+
+
+class Book {
+  constructor(title, author, isbn) {
+    this.title = title;
+    this.author = author;
+    this.isbn = isbn;
+  }
 }
+// function Book(title,author,isbn) {
+//   this.title = title;
+//   this.author = author;
+//   this.isbn = isbn;
+// }
 
 loadEventListner();
 
