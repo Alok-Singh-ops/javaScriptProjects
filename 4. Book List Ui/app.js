@@ -1,5 +1,5 @@
 const form = document.querySelector(".form");
-// const btn = document.querySelector(".btn");
+
 const title = document.getElementById("Title");
 const author = document.getElementById("Author");
 const isbn = document.getElementById("ISBN");
