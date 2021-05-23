@@ -18,7 +18,8 @@ loadEventListner();
 
 function loadEventListner() {
   
-  form.addEventListener("submit",addList)
+  form.addEventListener("submit",addList);
+  bookTable.addEventListener("click",removeBook);
 }
 
 function addList(e) {
@@ -38,11 +39,7 @@ function addList(e) {
 
 
   const book1 = new Book(bookName,bookAuthor,bookIsbn);
-console.log(book1);
 
-console.log(bookName);
-console.log(bookAuthor);
-console.log(bookIsbn);
 
 
 const row = document.createElement("tr");
@@ -58,7 +55,7 @@ tcell1.className = "title";
 tcell2.className = "author";
 tcell3.className = "isbn";
 
-
+row.className = "bookRow";
 
 tcell1.textContent = book1.title;
 tcell2.textContent = book1.author;
@@ -70,7 +67,7 @@ row.appendChild(tcell1);
 row.appendChild(tcell2);
 row.appendChild(tcell3);
  
-console.log(row);
+
 bookTable.appendChild(row);
   title.value = '';
   author.value = '';
@@ -85,6 +82,10 @@ bookTable.appendChild(row);
   e.preventDefault();
 }
 
-
+function removeBook(e) {
+  if(e.target.parentElement.parentElement.classList.contains("bookRow")){
+    e.target.parentElement.parentElement.remove();
+  }
+}
 
 
