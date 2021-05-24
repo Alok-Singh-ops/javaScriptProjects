@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style:none;
+}
+
+ul li{
+  margin-top: 5px;
+}
+
+.available_capacity_dose1,.available_capacity_dose2{
+  font-weight: bolder;
+}
+
+.success{
+  color: rgb(5, 170, 5);
+}
+
+.noSlot{
+  margin: 10px 0 15px 30px;
+  color: red;
+  display: none;
+   
+}
+
+
+body{
+  background-color: #f5f5f5;
+  font-family: 'Roboto', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+label{
+  display: block;
+}
+
+.container{
+  background-color: white;
+  width: 50em;
+  height: 100vh;
+  margin: 0px 50px 0 300px;
+}
+
+.btn{
+  color: white;
+  margin: 15px 0px 0px 3em;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: .75em;
+  letter-spacing: 1px;
+  height: 30px;
+  width: 80px;
+  line-height: 30px;
+  overflow: hidden;
+  background: #4dcf51;
+  border-radius: 3px;
+  box-shadow: 0 15px 30px rgba(black,.1);
+  border: 0;
+
+}
+
+.heading{
+  margin: 0px 60px 30px 200px;
+  padding-top: 20px;
+}
+.heading i{
+  margin-right: 10px;
+}
+
+.form-control div{
+  margin: 10px 0 0 2em;
+}
+
+input{
+  margin-top: 5px;
+  width: 60%;
+  padding-left: 10px;
+  height: 30px;
+}
+.details{
+  margin:30px 0 0 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 50px;
+}
+
+/*  
+.hospitalName{
+  margin: 30px 0 10px 50px;
+}
+
+.hospitalName h2{
+  margin-bottom: 5px;
+} */
+.hospitalName ul li{
+  margin: 5px 0 0 20px;
+}
