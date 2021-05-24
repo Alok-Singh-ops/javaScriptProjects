@@ -3,16 +3,17 @@ const mainArea = document.querySelector(".details");
 
 
 class UI {
-  constructor(centerName, blockName, time, avaiableDose1, avaiableDose2, vaccineName) {
+  constructor(centerName, blockName, time, avaiableDose1, avaiableDose2, minAge, vaccineName) {
     this.centerName = centerName;
     this.blockName = blockName;
     this.time = time;
     this.avaiableDose1 = avaiableDose1;
     this.avaiableDose2 = avaiableDose2;
+    this.minAge = minAge;
     this.vaccineName = vaccineName;
   }
   
-  addToUi(centerName,blockName,time,avaiableDose1,avaiableDose2,vaccineName){
+  addToUi(centerName,blockName,time,avaiableDose1,avaiableDose2,minAge,vaccineName){
     const mainDiv = document.createElement("div");
     const heading = document.createElement("h4");
     const listItem = document.createElement("ul");
@@ -21,6 +22,7 @@ class UI {
     const list3 = document.createElement("li");
     const list4 = document.createElement("li");
     const list5 = document.createElement("li");
+    const list6 = document.createElement("li");
   
     dispatchEvent.className = "hospitalName";
     heading.className = "centerName";
@@ -29,20 +31,23 @@ class UI {
     list2.className = "time";
     list3.className = "available_capacity_dose1 success";
     list4.className = "available_capacity_dose2 success";
-    list5.className = "vaccine";
+    list5.className = "age";
+    list6.className = "vaccine";
 
     heading.textContent = centerName;
-    list1.textContent = `Block Name: ${blockName}`;
-    list2.textContent = `Time: ${time}`;
-    list3.textContent = `Available Dose 1: ${avaiableDose1}`;
-    list4.textContent = `Available Dose 2: ${avaiableDose2}`;
-    list5.textContent = `Vaccine Name: ${vaccineName}`;
+    list1.textContent = `Block Name:- ${blockName}`;
+    list2.textContent = `Time:- ${time}`;
+    list3.textContent = `Available Dose 1:- ${avaiableDose1}`;
+    list4.textContent = `Available Dose 2:- ${avaiableDose2}`;
+    list5.textContent = `Min. Age Limit:- ${minAge}`
+    list6.textContent = `Vaccine Name:- ${vaccineName}`;
 
     listItem.appendChild(list1);
     listItem.appendChild(list2);
     listItem.appendChild(list3);
     listItem.appendChild(list4);
     listItem.appendChild(list5);
+    listItem.appendChild(list6);
 
     mainDiv.appendChild(heading);
     mainDiv.appendChild(listItem);

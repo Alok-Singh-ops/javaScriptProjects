@@ -20,8 +20,8 @@ slotForm.addEventListener("submit",(e)=>{
       data.sessions.forEach(element => {
         if(element.available_capacity_dose1 ===0 || element.available_capacity_dose2 ===0){
           ui.noSlot();
+          ui.addToUi(element.name,element.block_name,element.from+" - " + element.to,element.available_capacity_dose1,element.available_capacity_dose2,element.min_age_limit,element.vaccine);
         }
-          ui.addToUi(element.name,element.block_name,element.from+" - " + element.to,element.available_capacity_dose1,element.available_capacity_dose2,element.vaccine);
       
       });
     }
