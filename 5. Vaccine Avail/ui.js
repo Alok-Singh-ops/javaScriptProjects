@@ -54,7 +54,10 @@ class UI {
   noSlot(){
     const noSlot = document.querySelector(".noSlot");
     noSlot.style.display = "block";
-
+  }
+  noRecord(){
+    const noRecord = document.querySelector(".noRecord");
+    noRecord.style.display = "block";
   }
 }
 
