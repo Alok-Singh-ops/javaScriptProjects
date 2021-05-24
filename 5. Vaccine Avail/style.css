@@ -90,20 +90,35 @@ input{
   height: 30px;
 }
 .details{
-  margin:30px 0 0 50px;
+  margin:30px 0 0 30px;
   display: grid;
+  font-size: 14px;
   grid-template-columns: 1fr 1fr;
   row-gap: 50px;
 }
 
-/*  
-.hospitalName{
-  margin: 30px 0 10px 50px;
-}
-
-.hospitalName h2{
-  margin-bottom: 5px;
-} */
 .hospitalName ul li{
   margin: 5px 0 0 20px;
+}
+
+@media screen and (max-width: 400px){
+  .container{
+    width: 100%;
+    /* background-color: #4dcf51; */
+    margin: 0;
+  }
+  .heading{
+    margin: 0 20px 30px 40px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 1096px){
+  .container{
+    width: 100%;
+    /* background-color: #4dcf51; */
+    margin: 0;
+  }
+  .heading{
+    margin: 0 20px 30px 40px;
+  }
 }
