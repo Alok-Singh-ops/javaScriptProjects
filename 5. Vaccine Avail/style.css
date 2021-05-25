@@ -119,6 +119,11 @@ input:focus{
   .heading{
     margin: 0 20px 30px 40px;
   }
+
+  .details{
+    grid-template-columns: 1fr;
+  }
+
 }
 
 @media screen and (min-width: 400px) and (max-width: 1096px){
